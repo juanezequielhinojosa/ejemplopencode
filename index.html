@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Donato - Las mejores pizzas artesanales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍕</span>
+                <span class="logo-text">Donato</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#menu" class="nav-link">Menú</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="nav-cta">Reservar</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-bg">
+                <div class="hero-gradient"></div>
+                <div class="hero-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">✦ Tradición desde 1985</span>
+                    <h1>El Arte de la <br><span class="gradient-text">Pizza Perfecta</span></h1>
+                    <p>Ingredientes seleccionados, masa madre artesanal y el sabor de Italia en cada bocado</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">
+                            <span>Ver Menú</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#nosotros" class="btn btn-ghost">Nuestra Historia</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15K+</span>
+                            <span class="stat-label">Clientes felices</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25</span>
+                            <span class="stat-label">Variedades de pizza</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="pizza-showcase">
+                        <div class="pizza-glow"></div>
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Pizza artesanal" class="pizza-main">
+                        <div class="pizza-float pizza-float-1">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=200" alt="Pizza">
+                        </div>
+                        <div class="pizza-float pizza-float-2">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=200" alt="Pizza">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="specialties" id="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Nuestro Menú</span>
+                    <h2>Pizzas que enamoran</h2>
+                    <p>Recetas tradicionales italianas con un toque moderno</p>
+                </div>
+                <div class="menu-tabs">
+                    <button class="tab active" data-tab="clasicas">Clásicas</button>
+                    <button class="tab" data-tab="especiales">Especiales</button>
+                    <button class="tab" data-tab="vegetarianas">Vegetarianas</button>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-card" data-category="clasicas">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400" alt="Margarita">
+                            <div class="card-overlay">
+                                <span class="popular-badge">⭐ Popular</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Margarita</h3>
+                                <span class="price">€12</span>
+                            </div>
+                            <p>Salsa de tomate San Marzano, mozzarella di bufala, albahaca fresca</p>
+                            <div class="card-footer">
+                                <span class="size">32cm</span>
+                                <button class="add-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="clasicas">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400" alt="Pepperoni">
+                            <div class="card-overlay">
+                                <span class="popular-badge">🔥 Picante</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Pepperoni</h3>
+                                <span class="price">€14</span>
+                            </div>
+                            <p>Mozzarella, pepperoni artesanal, orégano, aceite de oliva virgen</p>
+                            <div class="card-footer">
+                                <span class="size">32cm</span>
+                                <button class="add-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="especiales">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400" alt="Prosciutto">
+                            <div class="card-overlay">
+                                <span class="popular-badge">✨ Premium</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Prosciutto</h3>
+                                <span class="price">€16</span>
+                            </div>
+                            <p>Jamón serrano 18 meses, rúcula fresca, parmesano, reducción de balsámico</p>
+                            <div class="card-footer">
+                                <span class="size">32cm</span>
+                                <button class="add-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="especiales">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Quattro Formaggi">
+                            <div class="card-overlay">
+                                <span class="popular-badge">🧀 Quesos</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Quattro Formaggi</h3>
+                                <span class="price">€15</span>
+                            </div>
+                            <p>Mozzarella, gorgonzola DOP, parmesano 24 meses, ricotta</p>
+                            <div class="card-footer">
+                                <span class="size">32cm</span>
+                                <button class="add-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="vegetarianas">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=400" alt="Vegetariana">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Vegetariana</h3>
+                                <span class="price">€13</span>
+                            </div>
+                            <p>Pimientos, champiñones, aceitunas, cebolla caramelizada, tomate seco</p>
+                            <div class="card-footer">
+                                <span class="size">32cm</span>
+                                <button class="add-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="menu-card" data-category="vegetarianas">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400" alt="Hawaiana">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Hawaiana</h3>
+                                <span class="price">€13</span>
+                            </div>
+                            <p>Jamón de york premium, piña natural, mozzarella, salsa barbacoa</p>
+                            <div class="card-footer">
+                                <span class="size">32cm</span>
+                                <button class="add-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="nosotros">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-images">
+                        <div class="about-img-main">
+                            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600" alt="Chef preparando pizza">
+                        </div>
+                        <div class="about-img-secondary">
+                            <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=300" alt="Ingredientes frescos">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="badge-number">40</span>
+                            <span class="badge-text">Años<br>de tradición</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">Sobre Nosotros</span>
+                        <h2>Una familia, una pasión, un sabor único</h2>
+                        <p class="about-lead">Desde 1985, la familia Donato mantiene viva la tradición de crear pizzas artesanales con los mejores ingredientes.</p>
+                        <p>Nuestra masa se prepara diariamente con fermentación lenta de 48 horas, utilizando masa madre natural que le otorga ese sabor único e inconfundible.</p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Masa Madre</h4>
+                                    <p>Fermentación lenta 48h</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Ingredientes Premium</h4>
+                                    <p>Selección rigurosa</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Horno Artesanal</h4>
+                                    <p>900°C de tradición</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">La mejor pizza que he probado en Madrid. La masa es increíble y se nota que están hechos con amor y tradición.</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="María García">
+                            <div class="author-info">
+                                <span class="author-name">María García</span>
+                                <span class="author-location">Madrid</span>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contacto">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-tag">Contacto</span>
+                        <h2>Ven a visitarnos</h2>
+                        <p>Estamos ubicados en el corazón de Madrid. ¡Te esperamos!</p>
+                        <div class="info-list">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Dirección</h4>
+                                    <p>Calle Mayor 42, Madrid 28013</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Horario</h4>
+                                    <p>Lunes - Domingo: 12:00 - 23:00</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Teléfono</h4>
+                                    <p>+34 912 345 678</p>
+                                </div>
+                            </div>
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                                </div>
+                                <div class="info-details">
+                                    <h4>Email</h4>
+                                    <p>hola@pizzeriadonato.es</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <h3>Reserva tu mesa</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="name" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" placeholder="+34 600 000 000" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Fecha</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="guests">Comensales</label>
+                                    <select id="guests" required>
+                                        <option value="">Seleccionar</option>
+                                        <option value="1">1 persona</option>
+                                        <option value="2">2 personas</option>
+                                        <option value="3">3 personas</option>
+                                        <option value="4">4 personas</option>
+                                        <option value="5">5+ personas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje (opcional)</label>
+                                <textarea id="message" placeholder="Alguna petición especial..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Enviar Reserva</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🍕</span>
+                        <span class="logo-text">Donato</span>
+                    </a>
+                    <p>Tradición italiana desde 1985. El sabor de Italia en cada pizza.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lunes - Jueves: 12:00 - 23:00</li>
+                        <li>Viernes - Domingo: 12:00 - 00:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Pizzeria Donato. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
